@@ -4,7 +4,7 @@ module Quickbooks
 
       # override update as sparse is not supported
       def update(entity, options = {})
-        raise Quickbooks::InvalidModelException.new('Employee sparse update is not supported by Intuit at this time') if options[:sparse] && options[:sparse] == true
+        #raise Quickbooks::InvalidModelException.new('Employee sparse update is not supported by Intuit at this time') if options[:sparse] && options[:sparse] == true
         super(entity, options)
       end
 
